@@ -19,15 +19,8 @@ export namespace Auth {
       tokenType: "access" | "refresh",
       token: string
     ) => {
-      let jwtSecretKey: string;
-
-      switch (tokenType) {
-        case "access":
-          jwtSecretKey = env.JWT_AT_SECRET_KEY;
-          break;
-        default:
-          jwtSecretKey = env.JWT_RT_SECRET_KEY;
-      }
+      let jwtSecretKey =
+        tokenType === "access" ? env.JWT_AT_SECRET_KEY : env.JWT_RT_SECRET_KEY;
 
       return jwt.verify(token, jwtSecretKey).sub;
     };
