@@ -6,6 +6,7 @@
   "license": "MIT",
   "description": "Securely authenticate Web3 users in Web2 backends using a challenge-response mechanism with Ethereum signatures and JWTs",
   "scripts": {
-    "backend:dev": "pnpm run --filter=backend dev"
+    "backend:dev": "pnpm run --filter=backend dev",
+    "dapp:dev": "pnpm run --filter=dapp dev"
   }
 }

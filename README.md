@@ -13,3 +13,9 @@ pnpm i
 ```sh
 pnpm run backend:dev
 ```
+
+### Dapp
+
+```sh
+pnpm run dapp:dev
+```
