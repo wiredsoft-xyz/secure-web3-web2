@@ -1,6 +1,7 @@
 {
   "name": "@secure-web3-web2/backend",
   "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "dev": "tsx watch src/index.ts",
